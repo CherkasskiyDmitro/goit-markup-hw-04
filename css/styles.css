@@ -1,0 +1,364 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --hover-text-color: #404bbf;
+}
+
+body {
+  font-family: var(--primary-font);
+  width: 1440px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Навігація */
+.nav-header {
+  border-bottom: 1px solid;
+  border-color: rgba(231, 233, 252, 1);
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 24px 0;
+  justify-content: space-between;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 76px;
+}
+
+.logo-span {
+  color: #4d5ae5;
+}
+.logo:focus,
+.logo:hover {
+  color: var(--hover-text-color);
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-font);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-text-color);
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-item li:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Контакти */
+.contact .contact-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.contact-item li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-link {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--hover-text-color);
+}
+
+/* Головна сторінка */
+.hero {
+  width: 1440px;
+  background-color: #2e2f42;
+}
+.hero-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-hero {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: #ffffff;
+  max-width: 494px;
+  padding-top: 188px;
+}
+
+.button-hero {
+  width: 169px;
+  height: 56px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 48px;
+  margin-bottom: 188px;
+}
+
+.button-hero:focus,
+.button-hero:hover {
+  background-color: var(--hover-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Наша мета */
+
+.artical-item {
+  list-style: none;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.artical-item li {
+  width: 264px;
+}
+.artical-item li:not(:last-child) {
+  margin-right: 24px;
+}
+.artical-item h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+.artical-item p {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+/* Що ми робимо */
+.features {
+  font-size: 36px;
+  line-height: 1.11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-item {
+  list-style: none;
+  display: flex;
+  margin-top: 72px;
+  padding-bottom: 120px;
+}
+.features-item li:not(:last-child) {
+  margin-right: 24px;
+}
+/* /* Наша команда * */
+.gallery-container {
+  background-color: #f4f4fd;
+  width: 1440px;
+}
+.gallery {
+  font-size: 36px;
+  line-height: 1.11px;
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-item {
+  list-style: none;
+  display: flex;
+  margin-top: 72px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery-titem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.gallery-titem h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  padding-top: 24px;
+  padding-bottom: 8px;
+  background-color: #ffffff;
+}
+.gallery-titem > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  background-color: #ffffff;
+  padding-bottom: 32px;
+  margin-bottom: 152px;
+}
+
+footer {
+  width: 1440px;
+  height: 310px;
+  background-color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container {
+  padding-top: 100px;
+}
+.logo-f {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #f4f4fd;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo-f:hover,
+.logo-f:focus{
+  color:#4d5ae5
+}
+
+
+footer p {
+  width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e9fc;
+  margin-top: 16px;
+}
+
+/* Портфоліо */
+.prtf-item {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+.prtf-item li {
+  margin-right: 24px;
+}
+
+.prtf-button {
+  background-color: #f4f4fd;
+  border: 12px solid #f4f4fd;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #4d5ae5;
+  cursor: pointer;
+}
+.prtf-button:hover,
+.prtf-button:focus {
+  background-color: var(--hover-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  border-color: var(--hover-text-color);
+}
+.prtf-item-img {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.prtf-item-img:nth-last-child(-n + 3) {
+  margin-bottom: 120px;
+}
+.prtf-item-img > .prtf-title:nth-last-child(-n + 3) {
+  padding-bottom: 0px;
+}
+
+.prtf-title {
+  padding-bottom: 54px;
+}
+
+.prtf-title h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(231, 233, 252, 1);
+  border-right: 1px solid rgba(231, 233, 252, 1);
+}
+.prtf-title p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+  padding: 8px 0 32px 16px;
+  border-left: 1px solid rgba(231, 233, 252, 1);
+  border-right: 1px solid rgba(231, 233, 252, 1);
+  border-bottom: 1px solid rgba(231, 233, 252, 1);
+}
+
