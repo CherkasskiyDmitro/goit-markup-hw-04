@@ -8,7 +8,6 @@
 
 body {
   font-family: var(--primary-font);
-  width: 1440px;
 }
 h1,
 h2,
@@ -31,9 +30,10 @@ img {
 }
 button {
   cursor: pointer;
+  border: none;
 }
 .container {
-  width: 1128px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -120,8 +120,9 @@ button {
 
 /* Головна сторінка */
 .hero {
-  width: 1440px;
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-item {
   display: flex;
@@ -134,60 +135,62 @@ button {
   text-align: center;
   color: #ffffff;
   max-width: 494px;
-  padding-top: 188px;
 }
 
 .button-hero {
   width: 169px;
   height: 56px;
   background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
-  cursor: pointer;
   margin-top: 48px;
-  margin-bottom: 188px;
 }
 
 .button-hero:focus,
 .button-hero:hover {
   background-color: var(--hover-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 /* Наша мета */
+.artical-section{
+padding-top:120px;
+padding-bottom: 120px;
+}
 
 .artical-item {
   list-style: none;
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.artical-item li {
-  width: 264px;
 }
 .artical-item li:not(:last-child) {
   margin-right: 24px;
 }
 .artical-item h3 {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--primary-text-color);
   margin-bottom: 8px;
 }
 .artical-item p {
+  font-family: var(--primary-font);
   font-size: 16px;
   line-height: 1.2;
   color: var(--secondary-text-color);
 }
 
 /* Що ми робимо */
+.features-section{
+  padding-bottom: 120px;
+}
+
 .features {
+  font-family: var(--primary-font);
+  color: rgba(46, 47, 66, 1);
   font-size: 36px;
   line-height: 1.11;
   display: flex;
@@ -198,21 +201,23 @@ button {
   list-style: none;
   display: flex;
   margin-top: 72px;
-  padding-bottom: 120px;
 }
 .features-item li:not(:last-child) {
   margin-right: 24px;
 }
 /* /* Наша команда * */
+
 .gallery-container {
   background-color: #f4f4fd;
-  width: 1440px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .gallery {
+  font-family: var(--primary-font);
+  color:rgba(46, 47, 66, 1);
   font-size: 36px;
-  line-height: 1.11px;
+  line-height: 1.11;
   display: flex;
-  padding-top: 120px;
   justify-content: center;
   align-items: center;
 }
@@ -228,36 +233,33 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 
+
 .gallery-titem h3 {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--primary-text-color);
-  padding-top: 24px;
-  padding-bottom: 8px;
-  background-color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
 .gallery-titem > p {
+  font-family: var(--primary-font);
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  color: var(--secondary-text-color);
-  background-color: #ffffff;
-  padding-bottom: 32px;
-  margin-bottom: 152px;
+  margin-bottom: 32px;
 }
-
-footer {
-  width: 1440px;
-  height: 310px;
-  background-color: #2e2f42;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* Футер */
 .footer-container {
+  background-color: #2e2f42;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-f {
   font-family: var(--secondary-font);
@@ -283,13 +285,15 @@ footer p {
 }
 
 /* Портфоліо */
+.prtf-container{
+  padding-top:96px;
+  padding-bottom: 120px;
+}
 .prtf-item {
   list-style: none;
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
 }
 .prtf-item li {
   margin-right: 24px;
@@ -327,21 +331,13 @@ footer p {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
+  margin-top: 72px;
+  row-gap:48px ;
+  column-gap:24px ;
+  margin-left: 15px;
+  margin-right: 15px;
 
-
-.prtf-item-img:nth-last-child(-n + 3) {
-  margin-bottom: 120px;
 }
-.prtf-item-img > .prtf-title:nth-last-child(-n + 3) {
-  padding-bottom: 0px;
-}
-
-.prtf-title {
-  padding-bottom: 54px;
-}
-
 .prtf-title h2 {
   font-weight: 500;
   font-size: 20px;
