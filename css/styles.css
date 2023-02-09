@@ -36,6 +36,8 @@ button {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* Навігація */
 .nav-header {
@@ -165,6 +167,9 @@ padding-bottom: 120px;
   list-style: none;
   display: flex;
 }
+.artical-item li{
+  width: 264px;
+}
 .artical-item li:not(:last-child) {
   margin-right: 24px;
 }
@@ -174,12 +179,14 @@ padding-bottom: 120px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 .artical-item p {
   font-family: var(--primary-font);
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
@@ -193,9 +200,8 @@ padding-bottom: 120px;
   color: rgba(46, 47, 66, 1);
   font-size: 36px;
   line-height: 1.11;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 .features-item {
   list-style: none;
@@ -217,9 +223,9 @@ padding-bottom: 120px;
   color:rgba(46, 47, 66, 1);
   font-size: 36px;
   line-height: 1.11;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  letter-spacing: 0.02em;
+  text-align: center;
+
 }
 .gallery-item {
   list-style: none;
@@ -334,9 +340,6 @@ footer p {
   margin-top: 72px;
   row-gap:48px ;
   column-gap:24px ;
-  margin-left: 15px;
-  margin-right: 15px;
-
 }
 .prtf-title h2 {
   font-weight: 500;
