@@ -293,38 +293,40 @@ button{
   gap: 24px;
   list-style: none;
   margin: 8px 16px 32px 16px;
-  
 }
 .gallery-social-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .gallery-social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.gallery-social-list-icon {
+  background-color:#4D5AE5;
+  border-radius: 20px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+}
+.gallery-social-list-link:hover,
+.gallery-social-list-link:focus{
+  background-color:#404BBF;
+}
+.gallery-social-list-icon {
+  width: 16px;
+  height: 16px;
   gap: 24px;
-  fill:#4D5AE5;
 }
-.gallery-social-list-icon:hover,
-.gallery-social-list-icon:focus{
-  fill:#404BBF;
-}
-  
 
 
 
-/* Клієнти */
+
+ /* Клієнти  */
 .customers {
   padding-top: 130px;
   padding-bottom: 120px;
-}
+} 
 
 .customers-text {
   font-family: var(--primary-font);
@@ -348,27 +350,30 @@ button{
   align-items: center;
 }
 .customers-list-icon{
-  width: 168px;
-  height: 88px; 
+  width: 104px;
+  height: 56px;
+  fill: rgba(142, 143, 153, 1);
 }
-
+.customers-list-icon:focus,
+.customers-list-icon:hover{
+  fill: #404BBF;
+}
 .customers-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #8E8F99;
   border: 1px solid rgba(142, 143, 153, 1);
   border-radius: 4px;
+  width: 168px;
+  height: 88px;
 }
-
+ 
 
 .customers-list-link:focus,
 .customers-list-link:hover{
-  fill: #404BBF;
   border: 1px solid #404BBF;
   border-radius: 4px;
-  fill: #404BBF;
-}
+} 
 
 /* Футер */
 .footer-container {
@@ -431,16 +436,20 @@ color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: rgba(255, 255, 255, 0.1);
+  background-color:rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
 }
 .footer-social-list-link:hover,
 .footer-social-list-link:focus{
-  fill: rgba(49, 208, 170, 1);
+  background-color:  rgba(49, 208, 170, 1);
 }
 
 .footer-social-list-icon{
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Портфоліо */
